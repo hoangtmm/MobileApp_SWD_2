@@ -2,14 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\app\\(tabs)",
-    "\\app\\auth",
-    "\\app\\Cart",
     "\\app\\MainPage",
     "\\app\\Payment",
     "\\app\\UserProfile",
+    "\\assets",
+    "\\components",
+    "\\constants",
     "\\context",
     "\\scripts"
   ],
+  "SelectedNode": "\\app\\UserProfile\\UserProfile.tsx",
   "PreviewInSolutionExplorer": false
 }

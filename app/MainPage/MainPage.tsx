@@ -17,17 +17,6 @@ export default function HomeScreen() {
     return (
         <View style={styles.container}>
             <StatusBar style="auto" />
-
-            {/* Navigation Bar */}
-            <View style={styles.navbar}>
-                <View style={styles.navItems}>
-                </View>
-                <View style={styles.authButtons}>
-                    <TouchableOpacity style={styles.loginButton}><Text style={styles.buttonText}>Login</Text></TouchableOpacity>
-                    <TouchableOpacity style={styles.signupButton}><Text style={styles.buttonText}>Sign Up</Text></TouchableOpacity>
-                </View>
-            </View>
-
             {/* Header */}
             <View style={styles.header}>
                 <Text style={styles.headerText}>Discover, Trade, and Collect Your Unique Accessories</Text>
@@ -75,16 +64,7 @@ export default function HomeScreen() {
                     </View>
                 )}
             />
-            {/* Bottom Navigation */}
-            <View style={styles.bottomNav}>
-                <TouchableOpacity style={styles.navItem}><Ionicons name="home" size={24} color="white" /><Text style={styles.navText}>Home</Text></TouchableOpacity>
-                <TouchableOpacity style={styles.navItem}><Ionicons name="search" size={24} color="white" /><Text style={styles.navText}>Search</Text></TouchableOpacity>
-                <TouchableOpacity style={styles.navItem}><Ionicons name="swap-horizontal" size={24} color="white" /><Text style={styles.navText}>Exchange</Text></TouchableOpacity>
-                <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('UserProfile')}>
-                    <Ionicons name="person" size={24} color="white" />
-                    <Text style={styles.navText}>Profile</Text>
-                </TouchableOpacity>
-            </View>
+
 
         </View>
     );
@@ -96,6 +76,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         padding: 10,
+        marginTop: 30
     },
     navbar: {
         flexDirection: 'row',

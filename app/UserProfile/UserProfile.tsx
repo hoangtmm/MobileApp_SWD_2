@@ -1,57 +1,100 @@
-﻿import React, { useState } from 'react';
+﻿import React, { useState, useEffect, useContext } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, ScrollView, Alert, Image } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { Ionicons } from '@expo/vector-icons';
+import { UserContext } from '@/context/UserContext';
+import { AuthContext } from '@/context/AuthContext';
+import { useRouter } from 'expo-router';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function UserProfileScreen({ navigation }) {
-    const [name, setName] = useState('Nguyễn Văn A');
-    const [phone, setPhone] = useState('0123456789');
+    // Lấy user và loading từ UserContext, logout từ AuthContext
+    const userContext = useContext(UserContext);
+    const auth = useContext(AuthContext);
+    const router = useRouter();
+
+    if (!userContext || !auth) {
+        return <Text>Chưa có UserContext hoặc AuthContext</Text>;
+    }
+
+    const { user, loading } = userContext;
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [email, setEmail] = useState('');
+    const [birthDate, setBirthDate] = useState('');
+    const [gender, setGender] = useState('');
+    const [avatarUrl, setAvatarUrl] = useState('');
+    const mapGender = (value) => {
+        if (value === 1) return "Male";
+        if (value === 0) return "Female";
+        return "Khác";
+    };
+    useEffect(() => {
+        if (user && user.response) {
+            const firstName = user.response.firstName ?? '';
+            const lastName = user.response.lastName ?? '';
+            const fullName = `${firstName} ${lastName}`.trim();
+
+            setName(fullName);
+            setPhone(user.response.phoneNumber ?? '');
+            setEmail(user.response.email ?? '');
+            setBirthDate(user.response.birthDate ?? '');
+            setGender(mapGender(user.response.gender));
+            setAvatarUrl(user.response.imageUrl ?? '');
+        }
+    }, [user]);
 
     const handleUpdate = () => {
-        Alert.alert('Cập nhật', 'Thông tin đã được cập nhật.');
+        Alert.alert('Cập nhật', 'Thông tin đã được cập nhật (demo).');
     };
 
-    const handleDelete = () => {
-        Alert.alert(
-            'Xóa tài khoản',
-            'Bạn có chắc muốn xóa tài khoản không?',
-            [
-                { text: 'Hủy', style: 'cancel' },
-                { text: 'Xóa', onPress: () => Alert.alert('Tài khoản đã bị xóa') }
-            ]
-        );
+    const handleLogout = async () => {
+        try {
+            await auth.logout();
+            const storedToken = await AsyncStorage.getItem('token');
+            console.log("Token sau khi logout:", storedToken);
+            Alert.alert("Thông báo", "Logout Successfully!!!");
+            router.replace('/auth/signIn');
+        } catch (error) {
+            Alert.alert("Lỗi", "Không thể đăng xuất.");
+        }
     };
+    if (loading) {
+        return (
+            <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}>
+                <Text>Đang tải thông tin người dùng...</Text>
+            </View>
+        );
+    }
 
     return (
         <View style={styles.container}>
             <ScrollView>
-                {/* Header Navigation */}
-                <TouchableOpacity style={styles.backButton} >
-                    <Text style={styles.backButtonText}>{'< Trở về danh mục'}</Text>
-                </TouchableOpacity>
-
                 <StatusBar style="auto" />
 
                 {/* Ảnh đại diện */}
                 <View style={styles.avatarContainer}>
                     <Image
-                        source={{ uri: 'https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/469444934_1769979723793798_1425409264350456114_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFSVu-fH9iMIVuqJ0NIJFOharyF1_4Ff5dqvIXX_gV_l42JY_cln5LOr6ELQJ2FE4k1FwCsBiSk2WtYkyVN9Cgo&_nc_ohc=71moZUWhV0QQ7kNvgGCxvvl&_nc_oc=AdgIK1Qd0vLecxqvR3KebETY-JOHpllGr5XXFEfWBIn6ZiKZNIXDZRi-LNRqdCa4S04l7Cd5oGGqGKEA8Ro8lnWu&_nc_zt=23&_nc_ht=scontent.fsgn2-9.fna&_nc_gid=ASzj7ByTfZwsZD_q9HSKhbY&oh=00_AYFkzzvrl1WYng4crKfPC5-MsjLQPxY6OsKCHqJfde_nnw&oe=67D38432' }}
+                        source={{ uri: avatarUrl }}
                         style={styles.avatar}
                     />
                 </View>
 
-                {/* Thông tin người dùng */}
-                <Text style={styles.title}>Thông Tin Người Dùng</Text>
+                {/* Tiêu đề */}
+                <Text style={styles.title}>User Information</Text>
+
+                {/* Input Tên */}
                 <View style={styles.inputContainer}>
-                    <Text style={styles.label}>Tên:</Text>
+                    <Text style={styles.label}>Name:</Text>
                     <TextInput
                         style={styles.input}
                         value={name}
                         onChangeText={setName}
                     />
                 </View>
+
+                {/* Input Số điện thoại */}
                 <View style={styles.inputContainer}>
-                    <Text style={styles.label}>Số điện thoại:</Text>
+                    <Text style={styles.label}>Phone Number:</Text>
                     <TextInput
                         style={styles.input}
                         value={phone}
@@ -60,38 +103,46 @@ export default function UserProfileScreen({ navigation }) {
                     />
                 </View>
 
-                {/* Nút cập nhật & xóa tài khoản */}
+                {/* Input Email */}
+                <View style={styles.inputContainer}>
+                    <Text style={styles.label}>Email:</Text>
+                    <TextInput
+                        style={styles.input}
+                        value={email}
+                        keyboardType="email-address"
+                        onChangeText={setEmail}
+                    />
+                </View>
+
+                {/* Input Ngày sinh */}
+                <View style={styles.inputContainer}>
+                    <Text style={styles.label}>Date of birth:</Text>
+                    <TextInput
+                        style={styles.input}
+                        value={birthDate}
+                        onChangeText={setBirthDate}
+                    />
+                </View>
+
+                {/* Hiển thị Giới tính */}
+                <View style={styles.inputContainer}>
+                    <Text style={styles.label}>Gender:</Text>
+                    <Text style={[styles.input, { paddingVertical: 10 }]}>{gender}</Text>
+                </View>
+
+                {/* Nút cập nhật */}
                 <TouchableOpacity style={styles.updateButton} onPress={handleUpdate}>
-                    <Text style={styles.buttonText}>Cập nhật thông tin</Text>
+                    <Text style={styles.buttonText}>Update Information</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.deleteButton} onPress={handleDelete}>
-                    <Text style={styles.buttonText}>Xóa tài khoản</Text>
+
+                {/* Nút Logout */}
+                <TouchableOpacity style={styles.deleteButton} onPress={handleLogout}>
+                    <Text style={styles.buttonText}>Logout</Text>
                 </TouchableOpacity>
             </ScrollView>
-
-            {/* Bottom Navigation */}
-            <View style={styles.bottomNav}>
-                <TouchableOpacity style={styles.navItem}>
-                    <Ionicons name="home" size={24} color="white" />
-                    <Text style={styles.navText}>Home</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.navItem}>
-                    <Ionicons name="search" size={24} color="white" />
-                    <Text style={styles.navText}>Search</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.navItem}>
-                    <Ionicons name="swap-horizontal" size={24} color="white" />
-                    <Text style={styles.navText}>Exchange</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('UserProfile')}>
-                    <Ionicons name="person" size={24} color="white" />
-                    <Text style={styles.navText}>Profile</Text>
-                </TouchableOpacity>
-            </View>
         </View>
     );
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -142,34 +193,5 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontWeight: 'bold',
         textAlign: 'center',
-    },
-    backButton: {
-        backgroundColor: '#1E90FF',
-        padding: 10,
-        borderRadius: 5,
-        alignSelf: 'flex-end',
-        marginRight: 10,
-        marginTop: 10,
-    },
-    backButtonText: {
-        color: '#fff',
-        fontWeight: 'bold',
-    },
-    bottomNav: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        backgroundColor: '#007BFF',
-        padding: 15,
-        position: 'absolute',
-        bottom: 0,
-        width: '100%',
-    },
-    navItem: {
-        alignItems: 'center',
-    },
-    navText: {
-        color: 'white',
-        fontSize: 12,
-        marginTop: 4,
     },
 });
