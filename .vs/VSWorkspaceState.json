@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\MainPage",
+    "\\app\\Payment",
+    "\\app\\UserProfile",
+    "\\assets",
+    "\\components",
+    "\\constants",
+    "\\context",
+    "\\scripts"
+  ],
+  "SelectedNode": "\\app\\UserProfile\\UserProfile.tsx",
+  "PreviewInSolutionExplorer": false
+}
