@@ -1,86 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\",
+  "WorkspaceRootPath": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\UserProfile\\UserProfile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\UserProfile\\UserProfile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\Payment\\DetailOrder.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Payment\\DetailOrder.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\MainPage\\MainPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\MainPage\\MainPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\context\\UserContext.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:context\\UserContext.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\scripts\\reset-project.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\reset-project.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\context\\AuthContext.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:context\\AuthContext.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\Cart\\Cart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\Cart\\Cart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Cart\\Cart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\Cart\\AddNewProduct.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Cart\\AddNewProduct.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\MainPage\\MainPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\MainPage\\MainPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\UserProfile\\UserProfile.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\context\\UserContext.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:context\\UserContext.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\scripts\\reset-project.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\reset-project.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\context\\AuthContext.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:context\\AuthContext.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\(tabs)\\home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\_layout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\_layout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\(tabs)\\_layout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\search.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\search.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\(tabs)\\search.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\request.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\request.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\(tabs)\\request.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\(tabs)\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\Payment\\DetailOrder.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Payment\\DetailOrder.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +93,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,12 +101,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "AddNewProduct.tsx",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\Cart\\AddNewProduct.tsx",
+              "RelativeDocumentMoniker": "app\\Cart\\AddNewProduct.tsx",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\Cart\\AddNewProduct.tsx",
+              "RelativeToolTip": "app\\Cart\\AddNewProduct.tsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-14T09:00:28.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UserProfile.tsx",
               "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\UserProfile\\UserProfile.tsx",
-              "RelativeDocumentMoniker": "app\\UserProfile\\UserProfile.tsx",
+              "RelativeDocumentMoniker": "..\\..\\MobileApp_SWD_2\\app\\UserProfile\\UserProfile.tsx",
               "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\UserProfile\\UserProfile.tsx",
-              "RelativeToolTip": "app\\UserProfile\\UserProfile.tsx",
+              "RelativeToolTip": "..\\..\\MobileApp_SWD_2\\app\\UserProfile\\UserProfile.tsx",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAABgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-03-11T06:18:38.011Z",
@@ -111,48 +127,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainPage.tsx",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\MainPage\\MainPage.tsx",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\MainPage\\MainPage.tsx",
               "RelativeDocumentMoniker": "app\\MainPage\\MainPage.tsx",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\MainPage\\MainPage.tsx",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\MainPage\\MainPage.tsx",
               "RelativeToolTip": "app\\MainPage\\MainPage.tsx",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAABAAADAAAAAAAAAA==",
+              "ViewState": "AgIAALkCAAAAAAAAAAAAAOYCAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-03-11T06:02:34.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserContext.tsx",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\context\\UserContext.tsx",
-              "RelativeDocumentMoniker": "context\\UserContext.tsx",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\context\\UserContext.tsx",
-              "RelativeToolTip": "context\\UserContext.tsx",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAC8AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-11T04:48:32.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "reset-project.js",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\scripts\\reset-project.js",
-              "RelativeDocumentMoniker": "scripts\\reset-project.js",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\scripts\\reset-project.js",
-              "RelativeToolTip": "scripts\\reset-project.js",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-11T04:49:21.017Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\README.md",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\README.md",
               "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\README.md",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\README.md",
               "RelativeToolTip": "README.md",
               "ViewState": "AgIAABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
@@ -160,11 +152,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "package.json",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\package.json",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\package.json",
               "RelativeDocumentMoniker": "package.json",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\package.json",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\package.json",
               "RelativeToolTip": "package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -172,11 +164,61 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Cart.tsx",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\Cart\\Cart.tsx",
+              "RelativeDocumentMoniker": "app\\Cart\\Cart.tsx",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\Cart\\Cart.tsx",
+              "RelativeToolTip": "app\\Cart\\Cart.tsx",
+              "ViewState": "AgIAABABAAAAAAAAAAAgwC8BAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-11T04:52:27.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DetailOrder.tsx",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\Payment\\DetailOrder.tsx",
+              "RelativeDocumentMoniker": "app\\Payment\\DetailOrder.tsx",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\Payment\\DetailOrder.tsx",
+              "RelativeToolTip": "app\\Payment\\DetailOrder.tsx",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAgwA8BAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-11T04:53:42.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "reset-project.js",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\scripts\\reset-project.js",
+              "RelativeDocumentMoniker": "scripts\\reset-project.js",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\scripts\\reset-project.js",
+              "RelativeToolTip": "scripts\\reset-project.js",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-11T04:49:21.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserContext.tsx",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\context\\UserContext.tsx",
+              "RelativeDocumentMoniker": "context\\UserContext.tsx",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\context\\UserContext.tsx",
+              "RelativeToolTip": "context\\UserContext.tsx",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAC8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-11T04:48:32.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "app.json",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app.json",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app.json",
               "RelativeDocumentMoniker": "app.json",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app.json",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app.json",
               "RelativeToolTip": "app.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -184,11 +226,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "package-lock.json",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\package-lock.json",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\package-lock.json",
               "RelativeDocumentMoniker": "package-lock.json",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\package-lock.json",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\package-lock.json",
               "RelativeToolTip": "package-lock.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -196,24 +238,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "config.ts",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\config.ts",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\config.ts",
               "RelativeDocumentMoniker": "config.ts",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\config.ts",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\config.ts",
               "RelativeToolTip": "config.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-11T04:46:12.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T04:46:12.831Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "tsconfig.json",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\tsconfig.json",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\tsconfig.json",
               "RelativeDocumentMoniker": "tsconfig.json",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\tsconfig.json",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\tsconfig.json",
               "RelativeToolTip": "tsconfig.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -221,11 +262,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\.gitignore",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\.gitignore",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\.gitignore",
               "RelativeToolTip": ".gitignore",
               "ViewState": "AgIAABYAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -233,11 +274,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "AuthContext.tsx",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\context\\AuthContext.tsx",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\context\\AuthContext.tsx",
               "RelativeDocumentMoniker": "context\\AuthContext.tsx",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\context\\AuthContext.tsx",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\context\\AuthContext.tsx",
               "RelativeToolTip": "context\\AuthContext.tsx",
               "ViewState": "AgIAADEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
@@ -245,11 +286,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "index.jsx",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\index.jsx",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\index.jsx",
               "RelativeDocumentMoniker": "app\\index.jsx",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\index.jsx",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\index.jsx",
               "RelativeToolTip": "app\\index.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
@@ -257,23 +298,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Cart.tsx",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\Cart\\Cart.tsx",
-              "RelativeDocumentMoniker": "app\\Cart\\Cart.tsx",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\Cart\\Cart.tsx",
-              "RelativeToolTip": "app\\Cart\\Cart.tsx",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-11T04:52:27.681Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "home.tsx",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\home.tsx",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\home.tsx",
               "RelativeDocumentMoniker": "app\\(tabs)\\home.tsx",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\home.tsx",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\home.tsx",
               "RelativeToolTip": "app\\(tabs)\\home.tsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
@@ -281,11 +310,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "_layout.jsx",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\_layout.jsx",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\_layout.jsx",
               "RelativeDocumentMoniker": "app\\(tabs)\\_layout.jsx",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\_layout.jsx",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\_layout.jsx",
               "RelativeToolTip": "app\\(tabs)\\_layout.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
@@ -293,11 +322,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "search.jsx",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\search.jsx",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\search.jsx",
               "RelativeDocumentMoniker": "app\\(tabs)\\search.jsx",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\search.jsx",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\search.jsx",
               "RelativeToolTip": "app\\(tabs)\\search.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
@@ -305,11 +334,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "request.jsx",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\request.jsx",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\request.jsx",
               "RelativeDocumentMoniker": "app\\(tabs)\\request.jsx",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\request.jsx",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\request.jsx",
               "RelativeToolTip": "app\\(tabs)\\request.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
@@ -317,27 +346,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "profile.jsx",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\profile.jsx",
+              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\profile.jsx",
               "RelativeDocumentMoniker": "app\\(tabs)\\profile.jsx",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\(tabs)\\profile.jsx",
+              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\Push_Branch\\MobileApp_SWD_2\\app\\(tabs)\\profile.jsx",
               "RelativeToolTip": "app\\(tabs)\\profile.jsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-03-11T04:34:57.125Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DetailOrder.tsx",
-              "DocumentMoniker": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\Payment\\DetailOrder.tsx",
-              "RelativeDocumentMoniker": "app\\Payment\\DetailOrder.tsx",
-              "ToolTip": "C:\\Users\\dinhg\\Desktop\\SWD Mobile\\MobileApp_SWD_2\\app\\Payment\\DetailOrder.tsx",
-              "RelativeToolTip": "app\\Payment\\DetailOrder.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-11T04:53:42.487Z"
             }
           ]
         }
