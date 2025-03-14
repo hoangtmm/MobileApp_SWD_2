@@ -7,7 +7,6 @@ import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function UserProfileScreen({ navigation }) {
-    // Lấy user và loading từ UserContext, logout từ AuthContext
     const userContext = useContext(UserContext);
     const auth = useContext(AuthContext);
     const router = useRouter();
@@ -157,6 +156,7 @@ const styles = StyleSheet.create({
         width: 100,
         height: 100,
         borderRadius: 50,
+        marginTop: 20,
     },
     title: {
         fontSize: 20,
