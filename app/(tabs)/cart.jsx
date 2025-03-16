@@ -42,17 +42,15 @@ export default function CartScreen() {
                 }));
 
                 setCartItems(items);
-
-                // Tính tổng tiền
                 const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
                 setTotalPrice(total);
             } else {
-                console.warn("Giỏ hàng trống hoặc dữ liệu không đúng định dạng:", data);
+                console.warn("Empty Cart:", data);
                 setCartItems([]);
                 setTotalPrice(0);
             }
         } catch (error) {
-            console.error('Lỗi khi lấy giỏ hàng:', error);
+            console.error('Error:', error);
         } finally {
             setLoading(false);
         }
@@ -67,24 +65,22 @@ export default function CartScreen() {
     const updateQuantity = async (id, newQuantity) => {
         if (newQuantity <= 0) {
             Alert.alert(
-                "Xác nhận xoá",
-                "Bạn có muốn xoá sản phẩm này khỏi giỏ hàng không?",
+                "Confirm Delete?",
+                "Are you sure to deleted this product?",
                 [
                     {
-                        text: "Hủy",
+                        text: "Cancel",
                         style: "cancel"
                     },
                     {
-                        text: "Đồng ý",
+                        text: "Yes",
                         onPress: async () => {
                             try {
                                 const token = await AsyncStorage.getItem('token');
                                 if (!token) {
-                                    Alert.alert('Lỗi', 'Không tìm thấy token');
+                                    Alert.alert('Error', 'Token not found!!!');
                                     return;
                                 }
-    
-                                // Gửi request xóa sản phẩm khi số lượng = 0
                                 const response = await fetch(`${API_USER_URL}/api/v1/DPSUpdateCartItem`, {
                                     method: 'PATCH',
                                     headers: {
@@ -98,21 +94,18 @@ export default function CartScreen() {
                                 });
     
                                 if (!response.ok) {
-                                    throw new Error('Xoá sản phẩm thất bại');
+                                    throw new Error('Delete faid!!!');
                                 }
     
-                                // Cập nhật lại giỏ hàng sau khi xoá thành công
                                 const updatedItems = cartItems.filter(item => item.id !== id);
                                 setCartItems(updatedItems);
-    
-                                // Tính lại tổng tiền
                                 const total = updatedItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
                                 setTotalPrice(total);
     
-                                console.log('Sản phẩm đã được xoá thành công');
+                                console.log('Delete Successfully!!!');
                             } catch (error) {
-                                console.error('Lỗi khi xoá sản phẩm:', error);
-                                Alert.alert('Lỗi', 'Không thể xoá sản phẩm');
+                                console.error('Error:', error);
+                                Alert.alert('Error', 'Error when delete');
                             }
                         }
                     }
@@ -128,7 +121,7 @@ export default function CartScreen() {
             try {
                 const token = await AsyncStorage.getItem('token');
                 if (!token) {
-                    Alert.alert('Lỗi', 'Không tìm thấy token');
+                    Alert.alert('Error', 'Token Not Found!!!');
                     return;
                 }
                 const response = await fetch(`${API_USER_URL}/api/v1/DPSUpdateCartItem`, {
@@ -143,12 +136,12 @@ export default function CartScreen() {
                     }),
                 });
                 if (!response.ok) {
-                    throw new Error('Cập nhật thất bại');
+                    throw new Error('Error Update!!!');
                 }
-                console.log('Cập nhật số lượng thành công');
+                console.log('Update Quantity Successfully');
             } catch (error) {
-                console.error('Lỗi khi cập nhật số lượng:', error);
-                Alert.alert('Lỗi', 'Không thể cập nhật số lượng');
+                console.error('Error:', error);
+                Alert.alert('Error', 'Not update quantity');
             }
         }
     };
@@ -159,7 +152,7 @@ export default function CartScreen() {
         return (
             <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}>
                 <ActivityIndicator size="large" color="#007BFF" />
-                <Text>Đang tải giỏ hàng...</Text>
+                <Text>Loading...</Text>
             </View>
         );
     }
@@ -170,7 +163,7 @@ export default function CartScreen() {
 
             {/* Header Navigation */}
             <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
-                <Text style={styles.backButtonText}>{'< Trở về danh mục'}</Text>
+                <Text style={styles.backButtonText}>{'<Back'}</Text>
             </TouchableOpacity>
 
             {/* Danh sách giỏ hàng */}
@@ -204,22 +197,20 @@ export default function CartScreen() {
                         </View>
                     ))
                 ) : (
-                    <Text style={styles.emptyText}>Giỏ hàng trống</Text>
+                    <Text style={styles.emptyText}>The Cart has been empty!!!</Text>
                 )}
             </ScrollView>
 
             {/* Bottom Bar */}
             <View style={styles.bottomBar}>
-                <Text style={styles.totalText}>Tổng tiền: {totalPrice.toLocaleString('vi-VN')}đ</Text>
+                <Text style={styles.totalText}>Total: {totalPrice.toLocaleString('vi-VN')}đ</Text>
                 <TouchableOpacity style={styles.checkoutButton}>
-                    <Text style={styles.buttonText}>Thanh Toán</Text>
+                    <Text style={styles.buttonText}>Payment</Text>
                 </TouchableOpacity>
             </View>
         </View>
     );
 }
-
-// Styles cập nhật
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -275,7 +266,7 @@ const styles = StyleSheet.create({
     quantityContainer: {
         flexDirection: 'row',
         alignItems: 'center',
-        marginLeft: 'auto',  // Đẩy về bên phải
+        marginLeft: 'auto', 
         borderWidth: 1,
         borderColor: '#ccc',
         borderRadius: 5,
