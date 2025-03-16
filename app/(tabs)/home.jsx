@@ -1,5 +1,5 @@
 ﻿import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, FlatList, ActivityIndicator } from 'react-native';
+import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, FlatList, ActivityIndicator, Alert } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { API_USER_URL } from "@/config";
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -48,7 +48,6 @@ const addToCart = async (product) => {
         alert('Vui lòng đăng nhập!');
         return;
       }
-  
       const response = await fetch(`${API_USER_URL}/api/v1/DPSInsertCart`, {
         method: 'POST',
         headers: {
@@ -58,7 +57,7 @@ const addToCart = async (product) => {
         },
         body: JSON.stringify({
           codeAccessory: product.codeProduct,
-          quantity: 1,  // Số lượng mặc định là 1
+          quantity: 1,  
         }),
       });
   
@@ -68,7 +67,9 @@ const addToCart = async (product) => {
   
       const result = await response.json();
       if (result.success) {
-        alert('Sản phẩm đã được thêm vào giỏ hàng!');
+        Alert.alert(
+            "Notification",
+            'Product has been added to cart!!!');
       } else {
         alert(result.message || 'Thêm vào giỏ hàng thất bại!');
       }
@@ -77,8 +78,6 @@ const addToCart = async (product) => {
       alert('Có lỗi xảy ra khi thêm vào giỏ hàng!');
     }
   };
-  
-    
     return (
         <View style={styles.container}>
             <StatusBar style="auto" />
@@ -106,7 +105,7 @@ const addToCart = async (product) => {
             ) : (
                 <>
                     {/* Featured Products */}
-                    <Text style={styles.sectionTitle}>Sản phẩm nổi bật</Text>
+                    <Text style={styles.sectionTitle}>Popular Products</Text>
                     <FlatList
                         data={filteredProducts}
                         numColumns={2}

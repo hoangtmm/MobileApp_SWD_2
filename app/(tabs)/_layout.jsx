@@ -9,7 +9,6 @@ export default function TabLayout() {
       <Tabs.Screen name="request" options={{tabBarIcon:({color, size}) => <FontAwesome name="exchange" size={size} color={color}/>, tabBarLabel:'Exchange'}}/>
       <Tabs.Screen name="cart" options={{tabBarIcon:({color, size}) => <AntDesign name="shoppingcart" size={size} color={color}/>, tabBarLabel:'Cart'}}/>
       <Tabs.Screen name="profile" options={{tabBarIcon:({color, size}) => <Ionicons name="person-circle-outline" size={size} color={color}/>, tabBarLabel:'Profile'}}/>
-
     </Tabs>
   );
 }

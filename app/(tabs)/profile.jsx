@@ -51,7 +51,7 @@ export default function UserProfileScreen({ navigation }) {
             await auth.logout();
             const storedToken = await AsyncStorage.getItem('token');
             console.log("Token sau khi logout:", storedToken);
-            Alert.alert("Thông báo", "Logout Successfully!!!");
+            Alert.alert("Notification!!!", "Logout Successfully!!!");
             router.replace('/auth/signIn');
         } catch (error) {
             Alert.alert("Lỗi", "Không thể đăng xuất.");
@@ -60,7 +60,7 @@ export default function UserProfileScreen({ navigation }) {
     if (loading) {
         return (
             <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}>
-                <Text>Đang tải thông tin người dùng...</Text>
+                <Text>Loading...</Text>
             </View>
         );
     }
