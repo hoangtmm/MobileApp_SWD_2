@@ -4,7 +4,6 @@ import { StatusBar } from 'expo-status-bar';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { API_USER_URL } from "@/config";
-
 export default function CartScreen() {
     const navigation = useNavigation();
     const [cartItems, setCartItems] = useState([]);
@@ -44,6 +43,9 @@ export default function CartScreen() {
                 setCartItems(items);
                 const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
                 setTotalPrice(total);
+                const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
+                await AsyncStorage.setItem('cartCount', totalItems.toString());
+            
             } else {
                 console.warn("Empty Cart:", data);
                 setCartItems([]);
@@ -60,13 +62,12 @@ export default function CartScreen() {
         React.useCallback(() => {
             fetchCartItems();
         }, [])
-    );
-
+    );   
     const updateQuantity = async (id, newQuantity) => {
         if (newQuantity <= 0) {
             Alert.alert(
                 "Confirm Delete?",
-                "Are you sure to deleted this product?",
+                "Are you sure to delete this product?",
                 [
                     {
                         text: "Cancel",
@@ -81,6 +82,7 @@ export default function CartScreen() {
                                     Alert.alert('Error', 'Token not found!!!');
                                     return;
                                 }
+    
                                 const response = await fetch(`${API_USER_URL}/api/v1/DPSUpdateCartItem`, {
                                     method: 'PATCH',
                                     headers: {
@@ -94,13 +96,16 @@ export default function CartScreen() {
                                 });
     
                                 if (!response.ok) {
-                                    throw new Error('Delete faid!!!');
+                                    throw new Error('Delete failed!!!');
                                 }
     
                                 const updatedItems = cartItems.filter(item => item.id !== id);
                                 setCartItems(updatedItems);
+    
                                 const total = updatedItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
                                 setTotalPrice(total);
+    
+                                await AsyncStorage.setItem('cartCount', updatedItems.length.toString());
     
                                 console.log('Delete Successfully!!!');
                             } catch (error) {
@@ -112,18 +117,28 @@ export default function CartScreen() {
                 ]
             );
         } else {
+            const isNewProduct = !cartItems.some(item => item.id === id);
+    
             const updatedItems = cartItems.map((item) =>
                 item.id === id ? { ...item, quantity: newQuantity } : item
             );
             setCartItems(updatedItems);
+    
             const total = updatedItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
             setTotalPrice(total);
+    
+            if (isNewProduct) {
+                const newCartCount = updatedItems.length;
+                await AsyncStorage.setItem('cartCount', newCartCount.toString());
+            }
+    
             try {
                 const token = await AsyncStorage.getItem('token');
                 if (!token) {
                     Alert.alert('Error', 'Token Not Found!!!');
                     return;
                 }
+    
                 const response = await fetch(`${API_USER_URL}/api/v1/DPSUpdateCartItem`, {
                     method: 'PATCH',
                     headers: {
@@ -135,9 +150,11 @@ export default function CartScreen() {
                         accessoryID: id
                     }),
                 });
+    
                 if (!response.ok) {
                     throw new Error('Error Update!!!');
                 }
+    
                 console.log('Update Quantity Successfully');
             } catch (error) {
                 console.error('Error:', error);
@@ -145,6 +162,10 @@ export default function CartScreen() {
             }
         }
     };
+    
+    
+    
+    
     
     
 
