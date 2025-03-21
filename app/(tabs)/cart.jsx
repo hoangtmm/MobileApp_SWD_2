@@ -63,111 +63,82 @@ export default function CartScreen() {
         }, [])
     );   
     const updateQuantity = async (id, newQuantity) => {
-        if (newQuantity <= 0) {
+        try {
+          const token = await AsyncStorage.getItem('token');
+          if (!token) {
+            Alert.alert('Error', 'Token not found!');
+            return;
+          }
+      
+          if (newQuantity <= 0) {
             Alert.alert(
-                "Confirm Delete?",
-                "Are you sure to delete this product?",
-                [
-                    {
-                        text: "Cancel",
-                        style: "cancel"
-                    },
-                    {
-                        text: "Yes",
-                        onPress: async () => {
-                            try {
-                                const token = await AsyncStorage.getItem('token');
-                                if (!token) {
-                                    Alert.alert('Error', 'Token not found!!!');
-                                    return;
-                                }
-    
-                                const response = await fetch(`${API_USER_URL}/api/v1/DPSUpdateCartItem`, {
-                                    method: 'PATCH',
-                                    headers: {
-                                        'Authorization': `Bearer ${token}`,
-                                        'Content-Type': 'application/json',
-                                    },
-                                    body: JSON.stringify({
-                                        quantity: 0,
-                                        accessoryID: id
-                                    }),
-                                });
-    
-                                if (!response.ok) {
-                                    throw new Error('Delete failed!!!');
-                                }
-    
-                                const updatedItems = cartItems.filter(item => item.id !== id);
-                                setCartItems(updatedItems);
-    
-                                const total = updatedItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
-                                setTotalPrice(total);
-    
-                                await AsyncStorage.setItem('cartCount', updatedItems.length.toString());
-    
-                                console.log('Delete Successfully!!!');
-                            } catch (error) {
-                                console.error('Error:', error);
-                                Alert.alert('Error', 'Error when delete');
-                            }
-                        }
+              "Confirm Delete?",
+              "Do you want to remove this product from the cart?",
+              [
+                { text: "Cancel", style: "cancel" },
+                {
+                  text: "Yes",
+                  onPress: async () => {
+                    try {
+                      const response = await fetch(`${API_USER_URL}/api/v1/DPSDeleteCartItem`, {
+                        method: 'PATCH',
+                        headers: {
+                          'Authorization': `Bearer ${token}`,
+                          'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ codeAccessory: id }),
+                      });
+      
+                      if (!response.ok) {
+                        throw new Error('Delete failed!');
+                      }
+                      const updatedItems = cartItems.filter(item => item.id !== id);
+                      setCartItems(updatedItems);
+      
+                      const total = updatedItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+                      setTotalPrice(total);
+      
+                      await AsyncStorage.setItem('cartCount', updatedItems.length.toString());
+      
+                      console.log('Product deleted successfully!');
+                    } catch (error) {
+                      console.error('Error deleting product:', error);
+                      Alert.alert('Error', 'Failed to delete product!');
                     }
-                ]
+                  }
+                }
+              ]
             );
-        } else {
-            const isNewProduct = !cartItems.some(item => item.id === id);
-    
-            const updatedItems = cartItems.map((item) =>
-                item.id === id ? { ...item, quantity: newQuantity } : item
+          } else {
+            const updatedItems = cartItems.map(item =>
+              item.id === id ? { ...item, quantity: newQuantity } : item
             );
             setCartItems(updatedItems);
-    
             const total = updatedItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
             setTotalPrice(total);
-    
-            if (isNewProduct) {
-                const newCartCount = updatedItems.length;
-                await AsyncStorage.setItem('cartCount', newCartCount.toString());
+            const response = await fetch(`${API_USER_URL}/api/v1/DPSUpdateCartItem`, {
+              method: 'PATCH',
+              headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                quantity: newQuantity,
+                accessoryID: id
+              }),
+            });
+      
+            if (!response.ok) {
+              throw new Error('Update failed!');
             }
-    
-            try {
-                const token = await AsyncStorage.getItem('token');
-                if (!token) {
-                    Alert.alert('Error', 'Token Not Found!!!');
-                    return;
-                }
-    
-                const response = await fetch(`${API_USER_URL}/api/v1/DPSUpdateCartItem`, {
-                    method: 'PATCH',
-                    headers: {
-                        'Authorization': `Bearer ${token}`,
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        quantity: newQuantity,
-                        accessoryID: id
-                    }),
-                });
-    
-                if (!response.ok) {
-                    throw new Error('Error Update!!!');
-                }
-    
-                console.log('Update Quantity Successfully');
-            } catch (error) {
-                console.error('Error:', error);
-                Alert.alert('Error', 'Not update quantity');
-            }
+      
+            console.log('Quantity updated successfully!');
+          }
+        } catch (error) {
+          console.error('Error updating quantity:', error);
+          Alert.alert('Error', 'Failed to update quantity!');
         }
-    };
-    
-    
-    
-    
-    
-    
-
+      };
     if (loading) {
         return (
             <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}>
@@ -176,7 +147,6 @@ export default function CartScreen() {
             </View>
         );
     }
-
     return (
         <View style={styles.container}>
             <StatusBar style="auto" />
