@@ -10,16 +10,21 @@ export default function TabLayout() {
 
   useEffect(() => {
     const getCartCount = async () => {
-      const count = await AsyncStorage.getItem('cartCount');
-      setBadgeCount(count ? parseInt(count, 10) : 0);
+      try {
+        const cartCount = await AsyncStorage.getItem('cartCount');
+        setBadgeCount(cartCount ? parseInt(cartCount, 10) : 0);
+      } catch (error) {
+        console.error('Error fetching cart count:', error);
+      }
     };
-
+    
     const interval = setInterval(getCartCount, 1000); // Cập nhật mỗi giây
     return () => clearInterval(interval);
   }, []);
 
   return (
     <Tabs screenOptions={{ headerShown: false }}>
+      {/* Home Tab */}
       <Tabs.Screen
         name="home"
         options={{
@@ -29,6 +34,8 @@ export default function TabLayout() {
           tabBarLabel: 'Home',
         }}
       />
+
+      {/* Exchange Tab */}
       <Tabs.Screen
         name="request"
         options={{
@@ -38,6 +45,8 @@ export default function TabLayout() {
           tabBarLabel: 'Exchange',
         }}
       />
+
+      {/* Cart Tab */}
       <Tabs.Screen
         name="cart"
         options={{
@@ -45,10 +54,12 @@ export default function TabLayout() {
             <AntDesign name="shoppingcart" size={size} color={color} />
           ),
           tabBarLabel: 'Cart',
-          tabBarBadge: badgeCount > 0 ? badgeCount : null,
+          tabBarBadge: badgeCount >= 0 ? badgeCount : null,
           tabBarBadgeStyle: { backgroundColor: 'red', color: 'white' },
         }}
       />
+
+      {/* Profile Tab */}
       <Tabs.Screen
         name="profile"
         options={{

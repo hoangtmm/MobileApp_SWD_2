@@ -43,8 +43,7 @@ export default function CartScreen() {
                 setCartItems(items);
                 const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
                 setTotalPrice(total);
-                const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
-                await AsyncStorage.setItem('cartCount', totalItems.toString());
+                await AsyncStorage.setItem('cartCount', items.length.toString());
             
             } else {
                 console.warn("Empty Cart:", data);
