@@ -17,8 +17,7 @@ export default function TabLayout() {
         console.error('Error fetching cart count:', error);
       }
     };
-    
-    const interval = setInterval(getCartCount, 1000); // Cập nhật mỗi giây
+    const interval = setInterval(getCartCount, 1000); 
     return () => clearInterval(interval);
   }, []);
 

@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Alert, ActivityIndicator } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Alert, ActivityIndicator, Linking } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { API_USER_URL } from "@/config";
+import QRCode from 'react-native-qrcode-svg';
+import Modal from 'react-native-modal';
 export default function CartScreen() {
     const navigation = useNavigation();
     const [cartItems, setCartItems] = useState([]);
     const [loading, setLoading] = useState(true);
     const [totalPrice, setTotalPrice] = useState(0);
+    const [qrCodeUrl, setQrCodeUrl] = useState(null);
+    const [isQrModalVisible, setQrModalVisible] = useState(false);
 
     const fetchCartItems = async () => {
         setLoading(true);
@@ -139,6 +143,60 @@ export default function CartScreen() {
           Alert.alert('Error', 'Failed to update quantity!');
         }
       };
+      const handlePayment = async () => {
+        const token = await AsyncStorage.getItem('token');
+        if (!token) {
+          Alert.alert('Lỗi', 'Không tìm thấy token');
+          return;
+        }
+    
+        const orderDetails = cartItems.map(item => ({
+          accessoryId: item.id,
+          quantity: item.quantity
+        }));
+    
+        const orderData = {
+          orderDetails: orderDetails,
+          paymentMethod: 1,  // Giả sử 1 là Momo
+          platform: "2",     // Android là "2", iOS là "1"
+          addressId: "dff2d9f1-1ac5-4c00-b4c3-fbab44e27ce5"
+        };
+    
+        try {
+          const response = await fetch(`${API_USER_URL}/api/v1/InsertOrder`, {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${token}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(orderData),
+          });
+    
+          const data = await response.json();
+          console.log('Response Data:', data);
+    
+          if (response.ok) {
+            Alert.alert('Thành công', 'Đặt hàng thành công!');
+            const momoResponse = data?.response?.momo;
+            const qrUrl = momoResponse?.qrCodeUrl;
+            const momoLink = momoResponse?.deeplink || momoResponse?.paymentUrl;
+    
+            if (qrUrl) {
+              setQrCodeUrl(qrUrl);
+              setQrModalVisible(true);
+            } else if (momoLink) {
+              Linking.openURL(momoLink);
+            } else {
+              Alert.alert('Lỗi', 'Không tìm thấy link thanh toán MoMo!');
+            }
+          } else {
+            Alert.alert('Lỗi', data.message || 'Có lỗi xảy ra khi thanh toán!');
+          }
+        } catch (error) {
+          console.error('Lỗi thanh toán:', error);
+          Alert.alert('Lỗi', 'Không thể kết nối đến server!');
+        }
+      };
     if (loading) {
         return (
             <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}>
@@ -194,10 +252,19 @@ export default function CartScreen() {
             {/* Bottom Bar */}
             <View style={styles.bottomBar}>
                 <Text style={styles.totalText}>Total: {totalPrice.toLocaleString('vi-VN')}đ</Text>
-                <TouchableOpacity style={styles.checkoutButton}>
-                    <Text style={styles.buttonText}>Payment</Text>
-                </TouchableOpacity>
+                <TouchableOpacity style={styles.checkoutButton} onPress={handlePayment}>
+          <Text style={styles.buttonText}>Payment</Text>
+        </TouchableOpacity>
             </View>
+            <Modal isVisible={isQrModalVisible} onBackdropPress={() => setQrModalVisible(false)}>
+        <View style={styles.modalContainer}>
+          <Text style={styles.modalTitle}>Quét mã QR để thanh toán</Text>
+          {qrCodeUrl && <QRCode value={qrCodeUrl} size={200} />}
+          <TouchableOpacity style={styles.closeButton} onPress={() => setQrModalVisible(false)}>
+            <Text style={styles.closeButtonText}>Đóng</Text>
+          </TouchableOpacity>
+        </View>
+      </Modal>
         </View>
     );
 }
@@ -305,4 +372,8 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontWeight: 'bold',
     },
+    modalContainer: { backgroundColor: 'white', padding: 20, borderRadius: 10, alignItems: 'center' },
+    modalTitle: { fontSize: 18, fontWeight: 'bold', marginBottom: 20 },
+    closeButton: { marginTop: 20, backgroundColor: '#007BFF', paddingVertical: 10, paddingHorizontal: 20, borderRadius: 5 },
+    closeButtonText: { color: '#fff', fontWeight: 'bold' },
 });
