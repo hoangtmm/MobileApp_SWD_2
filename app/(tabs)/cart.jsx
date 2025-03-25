@@ -176,7 +176,6 @@ export default function CartScreen() {
           console.log('Response Data:', data);
     
           if (response.ok) {
-            Alert.alert('Thành công', 'Đặt hàng thành công!');
             const momoResponse = data?.response?.momo;
             const qrUrl = momoResponse?.qrCodeUrl;
             const momoLink = momoResponse?.deeplink || momoResponse?.paymentUrl;
